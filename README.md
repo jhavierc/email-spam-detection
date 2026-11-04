@@ -11,11 +11,9 @@ that simulates a real mailbox**, with an *Inbox* and a *Spam* folder fed by the 
 
 ## Team
 
-| Name | Role | Contact |
-|------|------|---------|
-| _Member 1_ | _e.g. Data analysis & EDA_ | _email_ |
-| _Member 2_ | _e.g. Modelling & evaluation_ | _email_ |
-| _Member 3_ | _e.g. Web application_ | _email_ |
+- Carlos Javier Cepeda
+- David Hernando Salamanca
+- Jose Milciades Ordonez
 
 ## Results at a glance
 
