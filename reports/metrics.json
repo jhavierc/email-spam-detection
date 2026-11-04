@@ -1,0 +1,140 @@
+{
+  "split": "test",
+  "n_test": 774,
+  "models": {
+    "zero_shot": {
+      "threshold": 0.5,
+      "n_samples": 774,
+      "accuracy": 0.42248062015503873,
+      "precision": 0.14829659318637275,
+      "recall": 0.7708333333333334,
+      "f1": 0.24873949579831933,
+      "roc_auc": 0.6557276302851524,
+      "average_precision": 0.20671947745714092,
+      "confusion_matrix": {
+        "tn": 253,
+        "fp": 425,
+        "fn": 22,
+        "tp": 74
+      },
+      "classification_report": {
+        "ham": {
+          "precision": 0.92,
+          "recall": 0.37315634218289084,
+          "f1-score": 0.5309548793284365,
+          "support": 678.0
+        },
+        "spam": {
+          "precision": 0.14829659318637275,
+          "recall": 0.7708333333333334,
+          "f1-score": 0.24873949579831933,
+          "support": 96.0
+        },
+        "accuracy": 0.42248062015503873,
+        "macro avg": {
+          "precision": 0.5341482965931864,
+          "recall": 0.5719948377581121,
+          "f1-score": 0.38984718756337794,
+          "support": 774.0
+        },
+        "weighted avg": {
+          "precision": 0.8242848487673021,
+          "recall": 0.42248062015503873,
+          "f1-score": 0.4959514209060964,
+          "support": 774.0
+        }
+      },
+      "model": "Goodmotion/spam-mail-classifier",
+      "inference_seconds": 3.42
+    },
+    "fine_tuned": {
+      "threshold": 0.5,
+      "n_samples": 774,
+      "accuracy": 0.9883720930232558,
+      "precision": 0.9484536082474226,
+      "recall": 0.9583333333333334,
+      "f1": 0.9533678756476683,
+      "roc_auc": 0.9993547197640118,
+      "average_precision": 0.9957662811221236,
+      "confusion_matrix": {
+        "tn": 673,
+        "fp": 5,
+        "fn": 4,
+        "tp": 92
+      },
+      "classification_report": {
+        "ham": {
+          "precision": 0.9940915805022157,
+          "recall": 0.9926253687315634,
+          "f1-score": 0.9933579335793358,
+          "support": 678.0
+        },
+        "spam": {
+          "precision": 0.9484536082474226,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9533678756476683,
+          "support": 96.0
+        },
+        "accuracy": 0.9883720930232558,
+        "macro avg": {
+          "precision": 0.9712725943748192,
+          "recall": 0.9754793510324484,
+          "f1-score": 0.9733629046135021,
+          "support": 774.0
+        },
+        "weighted avg": {
+          "precision": 0.9884310568116987,
+          "recall": 0.9883720930232558,
+          "f1-score": 0.9883979263940127,
+          "support": 774.0
+        }
+      },
+      "model": "/Users/ccepeda/Documents/Maestria/Hackeando la inteligencia artificial/spam_detection/models/spam-mail-classifier-sms",
+      "inference_seconds": 1.1
+    },
+    "baseline": {
+      "threshold": 0.5,
+      "n_samples": 774,
+      "accuracy": 0.9832041343669251,
+      "precision": 0.9560439560439561,
+      "recall": 0.90625,
+      "f1": 0.93048128342246,
+      "roc_auc": 0.9944690265486726,
+      "average_precision": 0.9790815137907352,
+      "confusion_matrix": {
+        "tn": 674,
+        "fp": 4,
+        "fn": 9,
+        "tp": 87
+      },
+      "classification_report": {
+        "ham": {
+          "precision": 0.986822840409956,
+          "recall": 0.9941002949852508,
+          "f1-score": 0.9904481998530492,
+          "support": 678.0
+        },
+        "spam": {
+          "precision": 0.9560439560439561,
+          "recall": 0.90625,
+          "f1-score": 0.93048128342246,
+          "support": 96.0
+        },
+        "accuracy": 0.9832041343669251,
+        "macro avg": {
+          "precision": 0.9714333982269561,
+          "recall": 0.9501751474926254,
+          "f1-score": 0.9604647416377545,
+          "support": 774.0
+        },
+        "weighted avg": {
+          "precision": 0.9830053043645607,
+          "recall": 0.9832041343669251,
+          "f1-score": 0.983010442776387,
+          "support": 774.0
+        }
+      },
+      "model": "TF-IDF + LogisticRegression"
+    }
+  }
+}
